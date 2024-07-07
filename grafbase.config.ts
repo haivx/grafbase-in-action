@@ -1,5 +1,4 @@
 import { graph, config } from "@grafbase/sdk";
-r;
 // Welcome to Grafbase!
 //
 // Configure authentication, data sources, resolvers and caching for your GraphQL API.
@@ -25,7 +24,6 @@ const User = g.type("User", {
   description: g.string(),
   githubUrl: g.url().optional(),
   linkedInUrl: g.url().optional(),
-  projects: g.ref(Project),
 });
 
 const Project = g.type("Project", {
